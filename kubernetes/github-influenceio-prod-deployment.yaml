@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: github-influenceio-prod
+  name: github-influenceio-prod
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: github-influenceio-prod
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: github-influenceio-prod
+        version: v1
+    spec:
+      containers:
+      - image: gcr.io/influence-197607/github-influenceio-prod:latest
+        name: github-influenceio-prod
+        ports:
+        - containerPort: 80
+        env:
+        - name: DATABASE_HOST
+          value: db-prod

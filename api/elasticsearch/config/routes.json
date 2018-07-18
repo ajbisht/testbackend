@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/elasticsearch/health",
+      "handler": "Elasticsearch.health",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/elasticsearch/query",
+      "handler": "Elasticsearch.query",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/elasticsearch/search/:_id",
+      "handler": "Elasticsearch.notification",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/elasticsearch/unique/:_id",
+      "handler": "Elasticsearch.uniqueUsers",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

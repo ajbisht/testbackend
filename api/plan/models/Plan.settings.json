@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "plan",
+  "info": {
+    "name": "plan",
+    "description": "Plans for the customer and selected to profiles."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "subscribed_at": {
+      "type": "string",
+      "multiple": false
+    },
+    "servicebot_user_id": {
+      "type": "integer",
+      "multiple": false
+    },
+    "plan_details": {
+      "type": "json",
+      "multiple": false
+    },
+    "coupon_details": {
+      "type": "json",
+      "multiple": false
+    }
+  }
+}

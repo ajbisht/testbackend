@@ -1,0 +1,74 @@
+{
+  "connection": "default",
+  "collectionName": "payment",
+  "info": {
+    "name": "payment",
+    "description": "Payment collected from user and customer"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "via": "payments",
+      "plugin": "users-permissions"
+    },
+    "service_instance_id": {
+      "type": "integer",
+      "multiple": false
+    },
+    "service_id": {
+      "type": "integer",
+      "multiple": false
+    },
+    "user_id": {
+      "type": "integer",
+      "multiple": false
+    },
+    "requested_by": {
+      "type": "integer",
+      "multiple": false
+    },
+    "payment_plan": {
+      "type": "json",
+      "multiple": false
+    },
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "description": {
+      "type": "string",
+      "multiple": false
+    },
+    "subscription_id": {
+      "type": "string",
+      "multiple": false
+    },
+    "subscribed_at": {
+      "type": "integer",
+      "multiple": false
+    },
+    "trial_end": {
+      "type": "integer",
+      "multiple": false
+    },
+    "status": {
+      "type": "string",
+      "multiple": false
+    },
+    "type": {
+      "type": "string",
+      "multiple": false
+    },
+    "created_at": {
+      "type": "string",
+      "multiple": false
+    },
+    "updated_at": {
+      "type": "string",
+      "multiple": false
+    }
+  }
+}

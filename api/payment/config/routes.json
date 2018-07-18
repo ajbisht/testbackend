@@ -1,0 +1,92 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/payment/user",
+      "handler": "Payment.findAllUserPayments",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/payment/plan/:id",
+      "handler": "Payment.findAllPlanPayments",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/payment/servicebot/invoice",
+      "handler": "Payment.findUsersInvoice",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/payment",
+      "handler": "Payment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/payment/:_id",
+      "handler": "Payment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/payment",
+      "handler": "Payment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/payment/:_id",
+      "handler": "Payment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/payment/servicebot/cancel",
+      "handler": "Payment.cancelSubscription",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/payment/servicebot/delete",
+      "handler": "Payment.deleteSubscription",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/payment/servicebot/card",
+      "handler": "Payment.upgradeCard",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/payment/:_id",
+      "handler": "Payment.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

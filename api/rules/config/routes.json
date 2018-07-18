@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rules/user",
+      "handler": "Rules.findAllUserRules",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rules/campaign/:id",
+      "handler": "Rules.findAllCampaignRules",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rules/notificationtypes/:id",
+      "handler": "Rules.findAllNotificationTypesRules",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rules/configuration/path/:trackingId",
+      "handler": "Rules.findNotificationConfigurationPath",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rules",
+      "handler": "Rules.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rules/:_id",
+      "handler": "Rules.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rules",
+      "handler": "Rules.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rules/:_id",
+      "handler": "Rules.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rules/:_id",
+      "handler": "Rules.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

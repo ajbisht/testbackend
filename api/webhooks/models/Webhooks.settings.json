@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "webhooks",
+  "info": {
+    "name": "webhooks",
+    "description": "add customized webhook end points"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "type": {
+      "type": "string",
+      "multiple": false
+    },
+    "endpoint": {
+      "type": "string",
+      "multiple": false
+    },
+    "trackingId": {
+      "type": "string",
+      "multiple": false
+    },
+    "campaign": {
+      "model": "campaign"
+    },
+    "secretId": {
+      "type": "string",
+      "multiple": false
+    }
+  }
+}

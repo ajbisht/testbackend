@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "collectionName": "rules",
+  "info": {
+    "name": "rules",
+    "description": "Notification rules."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "conversions": {
+      "type": "string",
+      "multiple": false
+    },
+    "message": {
+      "type": "string",
+      "multiple": false
+    },
+    "days": {
+      "type": "integer",
+      "multiple": false
+    },
+    "delay": {
+      "type": "integer",
+      "multiple": false
+    },
+    "mostRecent": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "notificationTypes": {
+      "model": "notificationtypes",
+      "via": "rules"
+    },
+    "hideNotification": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "loopNotification": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "delayNotification": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "closeNotification": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "initialDelay": {
+      "type": "integer",
+      "multiple": false
+    },
+    "displayTime": {
+      "type": "integer",
+      "multiple": false
+    },
+    "delayBetween": {
+      "type": "integer",
+      "multiple": false
+    },
+    "displayPosition": {
+      "type": "string",
+      "multiple": false
+    },
+    "popupAnimationIn": {
+      "type": "string",
+      "multiple": false
+    },
+    "popupAnimationOut": {
+      "type": "string",
+      "multiple": false
+    },
+    "campaign": {
+      "model": "campaign",
+      "via": "rule"
+    },
+    "leads": {
+      "collection": "notificationpath",
+      "via": "rule"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "connection": "default",
+  "collectionName": "campaign",
+  "info": {
+    "name": "campaign",
+    "description": "Customer website campaign for the website."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "campaignName": {
+      "type": "string",
+      "multiple": false
+    },
+    "websiteName": {
+      "type": "string",
+      "multiple": false
+    },
+    "websiteUrl": {
+      "type": "string",
+      "multiple": false
+    },
+    "averageCustomer": {
+      "type": "integer",
+      "multiple": false
+    },
+    "trackingId": {
+      "type": "string",
+      "multiple": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "state": {
+      "type": "string",
+      "multiple": false
+    },
+    "notificationTypes": {
+      "model": "notificationtypes",
+      "via": "campaign"
+    },
+    "configuration": {
+      "model": "configuration"
+    },
+    "profile": {
+      "model": "profile"
+    },
+    "rule": {
+      "model": "rules",
+      "via": "campaign"
+    },
+    "uniqueVisitors": {
+      "type": "integer",
+      "multiple": false
+    },
+    "webhooks": {
+      "model": "webhooks"
+    }
+  }
+}

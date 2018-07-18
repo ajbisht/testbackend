@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "configurable": false
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "unique": true,
+      "required": true
+    },
+    "verified": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "verificationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "profile": {
+      "model": "profile",
+      "via": "user"
+    },
+    "stripeId": {
+      "type": "string",
+      "multiple": false
+    },
+    "payments": {
+      "collection": "payment",
+      "via": "user"
+    },
+    "servicebot": {
+      "type": "json",
+      "multiple": false
+    },
+    "coupon": {
+      "model": "coupon",
+      "via": "user"
+    },
+    "clients": {
+      "collection": "client",
+      "via": "userId"
+    },
+    "code": {
+      "model": "code",
+      "via": "userId"
+    },
+    "token": {
+      "model": "token",
+      "via": "userId"
+    },
+    "path": {
+      "type": "string",
+      "multiple": false
+    }
+  },
+  "collectionName": "users-permissions_user"
+}
